@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'rectangle-51': "url('/images/Rectangle 51.svg')",
       },
       screens: {
         'lg': {'min': '1440px'}, 
@@ -21,6 +19,15 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-futuraPT)'],
       },
+      spacing: {
+        18: "4.5rem",
+        30: "7.5rem",
+        26: "6.5rem",
+        25: "6.25rem",
+        10.5: "2.625rem",
+        100: "26.5rem"
+      },
+
     },
   },
   plugins: [],
