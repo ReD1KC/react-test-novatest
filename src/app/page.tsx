@@ -4,6 +4,7 @@ import FooterBlock from "./components/FooterBlock";
 import HeaderBlock from "./components/HeaderBlock";
 import MainBlock from "./components/MainBlock";
 import MapBlock from "./components/MapBlock";
+import Subscribe from "./components/Subscribe";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <footer>
         <FooterBlock />
       </footer>
+      <Subscribe />
     </>
   );
 }

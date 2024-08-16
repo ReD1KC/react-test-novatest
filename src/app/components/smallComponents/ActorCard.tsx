@@ -24,15 +24,18 @@ const ActorCard: React.FC<ActorCardProps> = ({
 
   return (
     <div
-      className="relative flex h-[400px] w-[282px]"
+      className="relative flex h-[400px] w-[282px] max-w-full"
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
-      <Image src={image} objectFit="cover" alt="" width={282} height={400} />
-      <div className="absolute bottom-0 left-0 p-6 text-white">
-        <div className="pb-1">{actorName}</div>
-        <div>{realName}</div>
+      <div className="absolute">
+        <Image src={image} objectFit="cover" alt="" width={282} height={400} />{" "}
+        <div className="absolute bottom-0 left-0 p-6 text-white">
+          <div className="pb-1">{actorName}</div>
+          <div>{realName}</div>
+        </div>
       </div>
+
       {/* {actorStore.hoveredActor === actorName && (
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white">
           <div>Дополнительная информация об актере</div>
