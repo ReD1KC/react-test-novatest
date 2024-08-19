@@ -77,7 +77,7 @@ const FooterBlock = () => {
                         onClick={closeModal}
                         className="absolute right-4 top-4 rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
                     >
-                        Закрыть
+                        X
                     </button>
                     <div className="pb-8 text-2xl font-semibold">
                         Обработка данных

@@ -1,10 +1,9 @@
-import ActorsBlock from "./components/ActorsBlock";
-import CadrsBlock from "./components/CadrsBlock";
-import FooterBlock from "./components/FooterBlock";
-import HeaderBlock from "./components/HeaderBlock";
-import MainBlock from "./components/MainBlock";
-import MapBlock from "./components/MapBlock";
-import Subscribe from "./components/Subscribe";
+import ActorsBlock from "../components/ActorsBlock";
+import CadrsBlock from "../components/CadrsBlock";
+import FooterBlock from "../components/FooterBlock";
+import HeaderBlock from "../components/HeaderBlock";
+import MainBlock from "../components/MainBlock";
+import MapBlock from "../components/MapBlock";
 
 export default function Home() {
     return (
@@ -21,7 +20,6 @@ export default function Home() {
             <footer>
                 <FooterBlock />
             </footer>
-            {/* <Subscribe /> */}
         </>
     );
 }

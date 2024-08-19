@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FooterBlock from "./FooterBlock";
+import FooterBlock from "@/components/FooterBlock";
 
 const Subscribe = () => {
     return (
@@ -22,7 +22,7 @@ const Subscribe = () => {
                         </div>
                         <div className="flex flex-col gap-y-8 pt-12">
                             <select
-                                className="py-4.5 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                className="w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                 defaultValue=""
                             >
                                 <option value="" disabled>
@@ -41,32 +41,32 @@ const Subscribe = () => {
 
                             <input
                                 type="text"
-                                className="py-4.5 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                className="w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                 placeholder="Имя"
                             />
 
                             <div className="flex w-full gap-x-6">
                                 <input
                                     type="text"
-                                    className="py-4.5 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                    className="w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                     placeholder="Email"
                                 />
                                 <input
                                     type="text"
-                                    className="py-4.5 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                    className="w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                     placeholder="+7 (___) __-__-___"
                                 />
                             </div>
 
                             <input
                                 type="text"
-                                className="py-4.5 h-40 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                className="h-40 w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                 placeholder="Оставить пометку к заказу"
                             />
 
                             <input
                                 type="file"
-                                className="py-4.5 w-full border-2 border-black bg-[#343338] pl-6 text-white"
+                                className="w-full border-2 border-black bg-[#343338] py-4.5 pl-6 text-white"
                                 placeholder="Прикрепите файл"
                             />
                         </div>
