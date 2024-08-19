@@ -7,21 +7,21 @@ import MapBlock from "./components/MapBlock";
 import Subscribe from "./components/Subscribe";
 
 export default function Home() {
-  return (
-    <>
-      <header>
-        <HeaderBlock />
-      </header>
-      <main className="flex flex-col gap-y-18 bg-[#000000]">
-        <MainBlock description="Геральт из Ривии, наемный охотник за чудовищами, перенесший мутации, идет навстречу своей судьбе в неспокойном мире, где люди часто оказываются куда коварнее чудовищ." />
-        <ActorsBlock />
-        <CadrsBlock />
-        <MapBlock />
-      </main>
-      <footer>
-        <FooterBlock />
-      </footer>
-      <Subscribe />
-    </>
-  );
+    return (
+        <>
+            <header>
+                <HeaderBlock />
+            </header>
+            <main className="flex flex-col gap-y-18 bg-[#181818]">
+                <MainBlock description="Геральт из Ривии, наемный охотник за чудовищами, перенесший мутации, идет навстречу своей судьбе в неспокойном мире, где люди часто оказываются куда коварнее чудовищ." />
+                <ActorsBlock />
+                <CadrsBlock />
+                <MapBlock />
+            </main>
+            <footer>
+                <FooterBlock />
+            </footer>
+            {/* <Subscribe /> */}
+        </>
+    );
 }

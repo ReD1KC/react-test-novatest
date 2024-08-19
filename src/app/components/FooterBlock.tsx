@@ -69,24 +69,38 @@ const FooterBlock = () => {
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Политика обработки персональных данных"
-                className="fixed inset-0 z-50 flex items-center justify-center p-4"
-                overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+                className="z-50 flex items-center justify-center p-4"
+                overlayClassName="fixed inset-0 bg-black bg-opacity-50 w-full"
             >
-                <div className="w-full max-w-lg rounded-lg bg-white py-14 pl-20">
-                    <div className="text-2xl font-semibold">
-                        Обработка данных
-                    </div>
-                    <div className="flex flex-col gap-y-16">
-                        <div className="flex flex-col"></div>
-                        <div className="flex flex-col"></div>
-                        <div className="flex flex-col"></div>
-                    </div>
+                <div className="relative w-2/3 bg-white px-20 py-14">
                     <button
                         onClick={closeModal}
-                        className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+                        className="absolute right-4 top-4 rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
                     >
                         Закрыть
                     </button>
+                    <div className="pb-8 text-2xl font-semibold">
+                        Обработка данных
+                    </div>
+                    <div className="flex flex-col gap-y-16">
+                        <div className="flex flex-col">
+                            <div className="flex">
+                                1. Что регулирует настоящая политика
+                                конфиденциальности
+                            </div>
+                            <p></p>
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="flex">
+                                2. Кто обрабатывает информацию
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="flex">
+                                3. Какова цель данной Политики
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Modal>
         </div>

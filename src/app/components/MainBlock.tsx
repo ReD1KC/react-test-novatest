@@ -13,7 +13,7 @@ const MainBlock = ({ description }: { description: string }) => {
                     objectFit="cover"
                 />
                 <div className="absolute flex flex-col pb-25 pl-30 pt-26">
-                    <div className="flex text-white">Сериал Ведьмак</div>
+                    <h1 className="flex text-white">Сериал Ведьмак</h1>
                     <div className="flex w-100 flex-row pb-10 pt-6 text-white">
                         {description}
                     </div>
