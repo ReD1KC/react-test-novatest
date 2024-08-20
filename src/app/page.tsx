@@ -12,10 +12,15 @@ export default function Home() {
                 <HeaderBlock />
             </header>
             <main className="flex flex-col gap-y-18 bg-[#181818]">
-                <MainBlock description="Геральт из Ривии, наемный охотник за чудовищами, перенесший мутации, идет навстречу своей судьбе в неспокойном мире, где люди часто оказываются куда коварнее чудовищ." />
-                <ActorsBlock />
-                <CadrsBlock />
-                <MapBlock />
+                <div className="flex">
+                    {" "}
+                    <MainBlock description="Геральт из Ривии, наемный охотник за чудовищами, перенесший мутации, идет навстречу своей судьбе в неспокойном мире, где люди часто оказываются куда коварнее чудовищ." />
+                </div>
+                <div className="flex flex-col gap-y-18">
+                    <ActorsBlock />
+                    <CadrsBlock />
+                    <MapBlock />
+                </div>
             </main>
             <footer>
                 <FooterBlock />

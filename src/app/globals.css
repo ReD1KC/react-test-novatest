@@ -7,6 +7,12 @@
     src: url("/fonts/Futura_PT_Demi") format("opentype");
 }
 
+.mainblockimg {
+    background-image: url("/images/Rectangle 51.png");
+    background-size: cover;
+    background-position: center;
+}
+
 h1 {
 }
 

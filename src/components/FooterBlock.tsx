@@ -27,7 +27,7 @@ const FooterBlock = () => {
                 </div>
                 <div className="flex w-46">
                     <button
-                        className="flex items-center justify-center text-center text-white underline"
+                        className="flex items-center justify-center text-center text-white underline underline-offset-[0.2em]"
                         onClick={openModal}
                     >
                         {"Политика обработки"}
@@ -75,7 +75,7 @@ const FooterBlock = () => {
                 <div className="relative w-2/3 bg-white px-20 py-14">
                     <button
                         onClick={closeModal}
-                        className="absolute right-4 top-4 rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+                        className="absolute right-4 top-4 rounded px-4 py-2 text-3xl text-black"
                     >
                         X
                     </button>
