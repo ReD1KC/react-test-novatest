@@ -38,36 +38,34 @@ const ActorsBlock = () => {
                     />
                 </div>
             </div>
-            <div className="flex w-full flex-nowrap gap-x-8 overflow-auto pl-30">
+            <div className="flex flex-nowrap gap-x-8 overflow-x-auto pl-30">
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
                     realName="Генри Кавилл"
+                    description="Test"
+                    id="1"
                 />
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
                     realName="Генри Кавилл"
+                    description="Test"
+                    id="2"
                 />
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
                     realName="Генри Кавилл"
+                    description="Test"
+                    id="3"
                 />
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
                     realName="Генри Кавилл"
-                />
-                <ActorCard
-                    image="/images/Rectangle 54.svg"
-                    actorName="Геральт"
-                    realName="Генри Кавилл"
-                />
-                <ActorCard
-                    image="/images/Rectangle 54.svg"
-                    actorName="Геральт"
-                    realName="Генри Кавилл"
+                    description="Test"
+                    id="4"
                 />
             </div>
         </div>

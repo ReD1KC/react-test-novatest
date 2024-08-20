@@ -1,18 +1,14 @@
 import { makeAutoObservable } from "mobx";
 
 class ActorStore {
-  hoveredActor: string | null = null;
+  hoveredActorId: string | null = null;
 
   constructor() {
     makeAutoObservable(this);
   }
 
-  setHoveredActor(actorName: string) {
-    this.hoveredActor = actorName;
-  }
-
-  clearHoveredActor() {
-    this.hoveredActor = null;
+  setHoveredActorId(id: string | null) {
+    this.hoveredActorId = id;
   }
 }
 

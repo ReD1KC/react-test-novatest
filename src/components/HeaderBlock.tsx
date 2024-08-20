@@ -6,13 +6,15 @@ import Link from "next/link";
 const HeaderBlock = () => {
     return (
         <div className="flex w-full justify-between bg-[#000000]">
-            <div className="flex pl-30">
-                <Image
-                    src="/images/image 24.svg"
-                    alt=""
-                    width={130}
-                    height={44}
-                />
+            <div className="flex py-5 pl-30">
+                <a href="http://localhost:3000">
+                    <Image
+                        src="/images/image 24.svg"
+                        alt=""
+                        width={130}
+                        height={44}
+                    />
+                </a>
             </div>
             <div className="flex py-5 pr-30">
                 <Link href="/subscribe">

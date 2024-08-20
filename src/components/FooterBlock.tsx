@@ -18,12 +18,14 @@ const FooterBlock = () => {
         <div className="flex w-full bg-[#343338]">
             <div className="flex w-full justify-between px-30 py-10.5">
                 <div className="flex">
-                    <Image
-                        src="/images/image 24.svg"
-                        alt=""
-                        width={130}
-                        height={44}
-                    />
+                    <a href="http://localhost:3000">
+                        <Image
+                            src="/images/image 24.svg"
+                            alt=""
+                            width={130}
+                            height={44}
+                        />
+                    </a>
                 </div>
                 <div className="flex w-46">
                     <button
