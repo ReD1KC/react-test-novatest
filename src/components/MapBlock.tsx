@@ -2,40 +2,52 @@ import Image from "next/image";
 
 const MapBlock = () => {
     return (
-        <div className="flex flex-col gap-y-10 px-30 py-24">
-            <h2 className="flex text-white">Магазины мерча ведьмака</h2>
+        <div className="relative flex flex-col gap-y-10 px-30 py-24">
+            <h2 className="text-white">Магазины мерча ведьмака</h2>
             <div className="relative w-full">
                 <Image
-                    src={"/images/image 5.svg"}
-                    alt=""
+                    src="/images/image 5.svg"
+                    alt="Map Background"
                     layout="responsive"
                     objectFit="cover"
                     width={1201}
                     height={540}
                     className="h-full w-full"
                 />
-                <div className="absolute left-0 top-0 h-full w-full">
-                    <Image
-                        src={"/images/Logo.svg"}
-                        alt=""
-                        width={28}
-                        height={28}
+                <div className="absolute inset-0">
+                    <div
                         className="absolute"
-                    />
-                    <Image
-                        src={"/images/Logo.svg"}
-                        alt=""
-                        width={28}
-                        height={28}
+                        style={{ top: "10%", left: "20%" }}
+                    >
+                        <Image
+                            src="/images/Logo.svg"
+                            alt="Logo"
+                            width={28}
+                            height={28}
+                        />
+                    </div>
+                    <div
                         className="absolute"
-                    />
-                    <Image
-                        src={"/images/Logo.svg"}
-                        alt=""
-                        width={28}
-                        height={28}
+                        style={{ top: "30%", left: "50%" }}
+                    >
+                        <Image
+                            src="/images/Logo.svg"
+                            alt="Logo"
+                            width={28}
+                            height={28}
+                        />
+                    </div>
+                    <div
                         className="absolute"
-                    />
+                        style={{ top: "50%", left: "70%" }}
+                    >
+                        <Image
+                            src="/images/Logo.svg"
+                            alt="Logo"
+                            width={28}
+                            height={28}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

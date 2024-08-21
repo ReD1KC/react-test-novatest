@@ -82,13 +82,15 @@ const Subscribe = () => {
                             </div>
                         </div>
                         <div className="flex pb-16 pt-4">
-                            <button className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)]">
-                                {" "}
-                                <Link href="/subscribe+">Оставить заявку</Link>
-                            </button>
+                            <Link href="/subscribe+">
+                                <button className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)]">
+                                    {" "}
+                                    Оставить заявку
+                                </button>
+                            </Link>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-y-8 pt-36">
+                    <div className="flex flex-col gap-y-8 pt-40">
                         <div className="flex flex-col gap-y-2">
                             <p className="flex text-white opacity-[60%]">
                                 Наша горячая линия

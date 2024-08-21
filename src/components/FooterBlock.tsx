@@ -16,7 +16,7 @@ const FooterBlock = () => {
 
     return (
         <div className="flex w-full bg-[#343338]">
-            <div className="flex w-full justify-between px-6 py-4 md:px-20 md:py-6">
+            <div className="flex w-full justify-between px-30 py-4">
                 <div className="flex">
                     <a href="/">
                         <Image

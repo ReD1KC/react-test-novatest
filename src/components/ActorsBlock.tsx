@@ -1,14 +1,39 @@
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
 import ActorCard from "./smallComponents/ActorCard";
 
 const ActorsBlock = () => {
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    const scrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: -300,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: 300,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
         <div className="flex flex-col overflow-x-auto">
             <div className="flex w-full flex-col justify-between px-30">
                 <div className="flex justify-between">
                     <h2 className="flex text-white">Актерский состав</h2>
                     <div className="flex gap-x-6">
-                        <button className="border-none bg-transparent">
+                        <button
+                            onClick={scrollLeft}
+                            className="border-none bg-transparent"
+                        >
                             <Image
                                 src="/images/Arrow left.svg"
                                 alt="Arrow left"
@@ -16,7 +41,10 @@ const ActorsBlock = () => {
                                 height={24}
                             />
                         </button>
-                        <button className="border-none bg-transparent">
+                        <button
+                            onClick={scrollRight}
+                            className="border-none bg-transparent"
+                        >
                             <Image
                                 src="/images/Arrow right.svg"
                                 alt="Arrow right"
@@ -38,7 +66,10 @@ const ActorsBlock = () => {
                     />
                 </div>
             </div>
-            <div className="flex snap-x snap-mandatory flex-nowrap gap-x-8 overflow-x-auto pl-30">
+            <div
+                ref={scrollContainerRef}
+                className="flex w-full snap-x snap-mandatory flex-nowrap gap-x-8 overflow-x-auto pl-30"
+            >
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
