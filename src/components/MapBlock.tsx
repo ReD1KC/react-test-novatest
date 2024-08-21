@@ -1,54 +1,25 @@
 import Image from "next/image";
-
+import MapComponent from "@/components/smallComponents/MapComponent";
 const MapBlock = () => {
+    const markers = [
+        { position: [51.505, -0.09] as [number, number], title: "Marker 1" },
+        { position: [51.515, -0.1] as [number, number], title: "Marker 2" },
+        { position: [51.525, -0.11] as [number, number], title: "Marker 3" },
+    ];
+
     return (
         <div className="relative flex flex-col gap-y-10 px-30 py-24">
             <h2 className="text-white">Магазины мерча ведьмака</h2>
-            <div className="relative w-full">
-                <Image
-                    src="/images/image 5.svg"
-                    alt="Map Background"
-                    layout="responsive"
-                    objectFit="cover"
-                    width={1201}
-                    height={540}
-                    className="h-full w-full"
+
+            <div
+                className="relative flex flex-col gap-y-10 px-30 py-24"
+                style={{ height: "500px", width: "100%" }}
+            >
+                <MapComponent
+                    center={[51.505, -0.09]}
+                    zoom={13}
+                    markers={markers}
                 />
-                <div className="absolute inset-0">
-                    <div
-                        className="absolute"
-                        style={{ top: "10%", left: "20%" }}
-                    >
-                        <Image
-                            src="/images/Logo.svg"
-                            alt="Logo"
-                            width={28}
-                            height={28}
-                        />
-                    </div>
-                    <div
-                        className="absolute"
-                        style={{ top: "30%", left: "50%" }}
-                    >
-                        <Image
-                            src="/images/Logo.svg"
-                            alt="Logo"
-                            width={28}
-                            height={28}
-                        />
-                    </div>
-                    <div
-                        className="absolute"
-                        style={{ top: "50%", left: "70%" }}
-                    >
-                        <Image
-                            src="/images/Logo.svg"
-                            alt="Logo"
-                            width={28}
-                            height={28}
-                        />
-                    </div>
-                </div>
             </div>
         </div>
     );
