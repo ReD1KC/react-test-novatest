@@ -3,7 +3,7 @@ import Image from "next/image";
 const MapBlock = () => {
     return (
         <div className="flex flex-col gap-y-10 px-30 py-24">
-            <div className="flex text-white">Магазины мерча ведьмака</div>
+            <h2 className="flex text-white">Магазины мерча ведьмака</h2>
             <div className="relative w-full">
                 <Image
                     src={"/images/image 5.svg"}

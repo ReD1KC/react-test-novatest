@@ -3,30 +3,71 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Futura_PT";
-    src: url("/fonts/Futura_PT_Demi") format("opentype");
+    font-family: "Futura PT Book";
+    src: url("/fonts/FuturaPT-Demi.woff");
+    font-weight: 600;
+    font-style: normal;
 }
 
-.mainblockimg {
+.mainblocking {
     background-image: url("/images/Rectangle 51.png");
     background-size: cover;
     background-position: center;
 }
 
 h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 56px;
 }
 
 h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
 }
 
 h3 {
 }
 
 h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.b {
+    font-weight: 400;
+}
+
+.a_button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.h_p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 p {
-}
-
-a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }

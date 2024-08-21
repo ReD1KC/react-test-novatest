@@ -3,33 +3,33 @@ import CadrCard from "./smallComponents/CadrCard";
 const CadrsBlock = () => {
     return (
         <div className="flex flex-col gap-y-10 px-30">
-            <div className="flex text-white">Кадры со съемок</div>
+            <h2 className="flex text-white">Кадры со съемок</h2>
             <div className="flex w-full gap-x-6">
                 <div className="flex w-1/2">
                     <CadrCard
-                        image="/images/Rectangle 54.svg"
+                        image="/images/Photo 1.png"
                         width={588}
                         height={588}
                     />
                 </div>
                 <div className="grid w-1/2 grid-cols-2 gap-6">
                     <CadrCard
-                        image="/images/Rectangle 54.svg"
+                        image="/images/Photo 2.png"
                         width={282}
                         height={282}
                     />
                     <CadrCard
-                        image="/images/Rectangle 54.svg"
+                        image="/images/Photo 3.png"
                         width={282}
                         height={282}
                     />
                     <CadrCard
-                        image="/images/Rectangle 54.svg"
+                        image="/images/Photo 4.png"
                         width={282}
                         height={282}
                     />
                     <CadrCard
-                        image="/images/Rectangle 54.svg"
+                        image="/images/Photo 5.png"
                         width={282}
                         height={282}
                     />

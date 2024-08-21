@@ -3,10 +3,10 @@ import ActorCard from "./smallComponents/ActorCard";
 
 const ActorsBlock = () => {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-x-auto">
             <div className="flex w-full flex-col justify-between px-30">
                 <div className="flex justify-between">
-                    <div className="flex text-white">Актерский состав</div>
+                    <h2 className="flex text-white">Актерский состав</h2>
                     <div className="flex gap-x-6">
                         <button className="border-none bg-transparent">
                             <Image
@@ -38,34 +38,41 @@ const ActorsBlock = () => {
                     />
                 </div>
             </div>
-            <div className="flex flex-nowrap gap-x-8 overflow-x-auto pl-30">
+            <div className="flex snap-x snap-mandatory flex-nowrap gap-x-8 overflow-x-auto pl-30">
                 <ActorCard
                     image="/images/Rectangle 54.svg"
                     actorName="Геральт"
                     realName="Генри Кавилл"
-                    description="Test"
+                    description="Один из центральных персонажей сериала, лучший друг и неизменный спутник Геральта, трубадур и бабник"
                     id="1"
                 />
                 <ActorCard
-                    image="/images/Rectangle 54.svg"
-                    actorName="Геральт"
-                    realName="Генри Кавилл"
-                    description="Test"
+                    image="/images/Rectangle 55.jpg"
+                    actorName="Лютик"
+                    realName="Джои Бэти"
+                    description="Один из центральных персонажей сериала, лучший друг и неизменный спутник Геральта, трубадур и бабник"
                     id="2"
                 />
                 <ActorCard
-                    image="/images/Rectangle 54.svg"
-                    actorName="Геральт"
-                    realName="Генри Кавилл"
-                    description="Test"
+                    image="/images/Rectangle 56.jpg"
+                    actorName="Йеннифэр"
+                    realName="Аня Чалотра"
+                    description="Один из центральных персонажей сериала, лучший друг и неизменный спутник Геральта, трубадур и бабник"
                     id="3"
                 />
                 <ActorCard
-                    image="/images/Rectangle 54.svg"
-                    actorName="Геральт"
-                    realName="Генри Кавилл"
-                    description="Test"
+                    image="/images/Rectangle 57.jpg"
+                    actorName="Цири"
+                    realName="Фрейя Аллан"
+                    description="Один из центральных персонажей сериала, лучший друг и неизменный спутник Геральта, трубадур и бабник"
                     id="4"
+                />
+                <ActorCard
+                    image="/images/Rectangle 58.jpg"
+                    actorName="Эмгыр вар Эмрейс"
+                    realName="Барт Эдвардс"
+                    description="Один из центральных персонажей сериала, лучший друг и неизменный спутник Геральта, трубадур и бабник"
+                    id="5"
                 />
             </div>
         </div>

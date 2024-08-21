@@ -15,11 +15,11 @@ const Subscribe = () => {
                     />
                 </div>
                 <div className="flex gap-x-32">
-                    <div className="flex w-1/3 flex-col">
+                    <div className="flex w-2/3 flex-col">
                         <div className="flex">
-                            <div className="flex pt-16 text-white">
+                            <h1 className="flex pt-16 text-white">
                                 Оставить заявку
-                            </div>
+                            </h1>
                         </div>
                         <div className="flex flex-col gap-y-8 pt-12">
                             <select
@@ -74,7 +74,7 @@ const Subscribe = () => {
                         <div className="flex py-10">
                             <input
                                 type="checkbox"
-                                className="h-8 w-8 bg-[#343338]"
+                                className="h-8 w-8 appearance-none border-2 border-gray-400 bg-[#343338]"
                             />
                             <div className="flex pl-7 pt-1 text-white">
                                 Даю согласие на обработку своих персональных
@@ -82,7 +82,7 @@ const Subscribe = () => {
                             </div>
                         </div>
                         <div className="flex pb-16 pt-4">
-                            <button className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white">
+                            <button className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)]">
                                 {" "}
                                 <Link href="/subscribe+">Оставить заявку</Link>
                             </button>
@@ -90,24 +90,26 @@ const Subscribe = () => {
                     </div>
                     <div className="flex flex-col gap-y-8 pt-36">
                         <div className="flex flex-col gap-y-2">
-                            <div className="flex text-white">
+                            <p className="flex text-white opacity-[60%]">
                                 Наша горячая линия
-                            </div>
-                            <div className="flex text-white">
-                                8 800 38 23 112
-                            </div>
+                            </p>
+                            <h2 className="flex text-white">8 800 38 23 112</h2>
                         </div>
                         <div className="flex flex-col gap-y-2">
-                            <div className="flex text-white">Главный офис</div>
-                            <div className="flex text-white">
+                            <p className="flex text-white opacity-[60%]">
+                                Главный офис
+                            </p>
+                            <h2 className="flex text-white">
                                 г. Москва, Садовническая ул., 80
-                            </div>
+                            </h2>
                         </div>
                         <div className="flex flex-col gap-y-2">
-                            <div className="flex text-white">Часы работы</div>
-                            <div className="flex text-white">
+                            <p className="flex text-white opacity-[60%]">
+                                Часы работы
+                            </p>
+                            <h2 className="flex text-white">
                                 Пн-Пт с 10:00 до 22:00
-                            </div>
+                            </h2>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default function Home() {
                     {" "}
                     <MainBlock description="Геральт из Ривии, наемный охотник за чудовищами, перенесший мутации, идет навстречу своей судьбе в неспокойном мире, где люди часто оказываются куда коварнее чудовищ." />
                 </div>
-                <div className="flex flex-col gap-y-18">
+                <div className="flex flex-col gap-y-18 overflow-x-auto">
                     <ActorsBlock />
                     <CadrsBlock />
                     <MapBlock />
