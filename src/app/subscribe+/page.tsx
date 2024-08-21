@@ -7,12 +7,14 @@ const Subscribe = () => {
         <>
             <div className="flex w-full flex-col bg-[#181818] px-30 pt-6">
                 <div className="flex">
-                    <Image
-                        src="/images/image 24.svg"
-                        alt=""
-                        width={130}
-                        height={44}
-                    />
+                    <a href="http://localhost:3000">
+                        <Image
+                            src="/images/image 24.svg"
+                            alt=""
+                            width={130}
+                            height={44}
+                        />
+                    </a>
                 </div>
                 <div className="flex gap-x-32">
                     <div className="flex w-2/3 flex-col">
@@ -29,7 +31,7 @@ const Subscribe = () => {
                             </h4>
                         </div>
                         <div className="flex pb-16 pt-10">
-                            <Link href="/subscribe+">
+                            <Link href="/">
                                 <button className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)]">
                                     {" "}
                                     Вернуться на главную
