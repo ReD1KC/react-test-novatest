@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const MapBlock = () => {
     return (
-        <div className="relative flex flex-col gap-y-10 px-30 py-24">
-            <h2 className="text-white">Магазины мерча ведьмака</h2>
+        <div className="relative flex flex-col gap-y-10 px-30 py-24 lg:px-0">
+            <h2 className="text-white md:pl-16">Магазины мерча ведьмака</h2>
             <div className="relative w-full">
                 <Image
                     src="/images/image 5.svg"
@@ -16,8 +16,8 @@ const MapBlock = () => {
                 />
                 <div className="absolute inset-0">
                     <div
-                        className="absolute"
-                        style={{ top: "10%", left: "20%" }}
+                        className="absolute rounded-full bg-white p-2"
+                        style={{ top: "15%", left: "18%" }}
                     >
                         <Image
                             src="/images/Logo.svg"
@@ -27,8 +27,8 @@ const MapBlock = () => {
                         />
                     </div>
                     <div
-                        className="absolute"
-                        style={{ top: "30%", left: "50%" }}
+                        className="absolute rounded-full bg-white p-2"
+                        style={{ top: "45%", left: "26%" }}
                     >
                         <Image
                             src="/images/Logo.svg"
@@ -38,8 +38,8 @@ const MapBlock = () => {
                         />
                     </div>
                     <div
-                        className="absolute"
-                        style={{ top: "50%", left: "70%" }}
+                        className="absolute rounded-full bg-white p-2"
+                        style={{ top: "50%", left: "50%" }}
                     >
                         <Image
                             src="/images/Logo.svg"

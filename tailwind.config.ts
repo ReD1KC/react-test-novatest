@@ -9,9 +9,9 @@ const config: Config = {
     theme: {
         extend: {
             screens: {
-                lg: { min: "1440px" },
-                md: { min: "768px" },
-                sm: { min: "360px" },
+                lg: { max: "1440px" },
+                md: { max: "768px" },
+                sm: { max: "360px" },
             },
             fontFamily: {
                 futura: ["Futura PT Book", "sans-serif"],

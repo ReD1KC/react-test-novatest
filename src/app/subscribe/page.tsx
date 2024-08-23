@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import Image from "next/image";
 import FooterBlock from "@/components/FooterBlock";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const errorClass = "bg-[#FF5858]";
 
@@ -13,10 +14,17 @@ const Subscribe = () => {
         formState: { errors },
     } = useForm();
     const router = useRouter();
+    const [loading, setLoading] = useState(false);
 
     const onSubmit = (data) => {
-        console.log(data);
-        router.push("/subscribe+");
+        setLoading(true);
+        console.log("Данные для отправки:", data);
+
+        setTimeout(() => {
+            setLoading(false);
+            console.log("Данные успешно отправлены!");
+            router.push("/subscribe+");
+        }, 2000);
     };
 
     return (
@@ -187,9 +195,10 @@ const Subscribe = () => {
                         <div className="flex pb-16 pt-4">
                             <button
                                 type="submit"
-                                className="flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)]"
+                                className={`flex items-center justify-center bg-[#EC3F3F] px-10.5 py-4 text-white transition duration-300 ease-in-out hover:bg-[#FF1E1E] hover:shadow-[0px_2px_24px_rgba(255,30,30,0.5)] ${loading ? "cursor-not-allowed opacity-50" : ""}`}
+                                disabled={loading} // блокируем кнопку при загрузке
                             >
-                                Оставить заявку
+                                {loading ? "Отправка..." : "Оставить заявку"}
                             </button>
                         </div>
                     </form>
