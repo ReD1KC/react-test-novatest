@@ -85,3 +85,7 @@ input[type="checkbox"]:checked::after {
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
 }
+
+.input_comment {
+    vertical-align: text-top;
+}

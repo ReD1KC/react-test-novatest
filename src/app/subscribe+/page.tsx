@@ -39,7 +39,7 @@ const Subscribe = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-y-8 pb-100">
+                    <div className="flex flex-col gap-y-8 pb-100 pt-11">
                         <div className="flex flex-col gap-y-2">
                             <p className="flex text-white opacity-[60%]">
                                 Наша горячая линия

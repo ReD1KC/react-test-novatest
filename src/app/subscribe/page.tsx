@@ -16,7 +16,6 @@ const Subscribe = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-
         router.push("/subscribe+");
     };
 
@@ -47,11 +46,13 @@ const Subscribe = () => {
                             <div className="flex flex-col">
                                 <select
                                     {...register("city", {
-                                        required: "",
+                                        validate: (value) => value !== "main",
+                                        required: "Выберите город",
                                     })}
+                                    defaultValue="main"
                                     className={`w-full border-2 border-black py-4.5 pl-6 text-white ${errors.city ? errorClass : "bg-[#343338]"}`}
                                 >
-                                    <option value="" disabled>
+                                    <option value="main" disabled>
                                         Выберите город
                                     </option>
                                     <option value="Москва">Москва</option>
@@ -76,7 +77,7 @@ const Subscribe = () => {
                             <div className="flex flex-col">
                                 <input
                                     {...register("name", {
-                                        required: "",
+                                        required: "Имя обязательно",
                                     })}
                                     type="text"
                                     className={`w-full border-2 border-black py-4.5 pl-6 text-white ${errors.name ? errorClass : "bg-[#343338]"}`}
@@ -133,9 +134,11 @@ const Subscribe = () => {
 
                             <div className="flex flex-col">
                                 <input
-                                    {...register("note")}
+                                    {...register("note", {
+                                        required: "Пометка обязательна",
+                                    })}
                                     type="text"
-                                    className={`h-40 w-full border-2 border-black py-4.5 pl-6 text-white ${errors.note ? errorClass : "bg-[#343338]"}`}
+                                    className={`h-40 w-full border-2 border-black py-4.5 pl-6 align-text-top text-white ${errors.note ? errorClass : "bg-[#343338]"}`}
                                     placeholder="Оставить пометку к заказу"
                                 />
                                 {errors.note && (
@@ -147,7 +150,9 @@ const Subscribe = () => {
 
                             <div className="flex flex-col">
                                 <input
-                                    {...register("file")}
+                                    {...register("file", {
+                                        required: "Файл обязателен",
+                                    })}
                                     type="file"
                                     className={`w-full border-2 border-black py-4.5 pl-6 text-white ${errors.file ? errorClass : "bg-[#343338]"}`}
                                     placeholder="Прикрепите файл"

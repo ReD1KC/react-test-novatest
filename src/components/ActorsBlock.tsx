@@ -68,7 +68,7 @@ const ActorsBlock = () => {
             </div>
             <div
                 ref={scrollContainerRef}
-                className="flex w-full snap-x snap-mandatory flex-nowrap gap-x-8 overflow-x-auto pl-30"
+                className="flex w-fit flex-nowrap gap-x-8 overflow-x-auto pl-30"
             >
                 <ActorCard
                     image="/images/Rectangle 54.svg"
